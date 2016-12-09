@@ -15,6 +15,8 @@
 		B437C1881DFA523400F222B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B437C1861DFA523400F222B4 /* LaunchScreen.storyboard */; };
 		B437C1931DFA523500F222B4 /* PopPushAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1921DFA523500F222B4 /* PopPushAnimationTests.m */; };
 		B437C19E1DFA523500F222B4 /* PopPushAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C19D1DFA523500F222B4 /* PopPushAnimationUITests.m */; };
+		B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */; };
+		F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A09F1D20944D2C4AC750A3A9 /* Pods-PopPushAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopPushAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopPushAnimation/Pods-PopPushAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		A3C57C733670FD161C878FFF /* Pods-PopPushAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopPushAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopPushAnimation/Pods-PopPushAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		B437C1751DFA523400F222B4 /* PopPushAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopPushAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B437C1791DFA523400F222B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B437C17B1DFA523400F222B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B437C17C1DFA523400F222B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B437C17E1DFA523400F222B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B437C17F1DFA523400F222B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B437C17E1DFA523400F222B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		B437C17F1DFA523400F222B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		B437C1821DFA523400F222B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B437C1841DFA523400F222B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B437C1871DFA523400F222B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		B437C1991DFA523500F222B4 /* PopPushAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopPushAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B437C19D1DFA523500F222B4 /* PopPushAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopPushAnimationUITests.m; sourceTree = "<group>"; };
 		B437C19F1DFA523500F222B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B437C1AE1DFA8A6E00F222B4 /* PopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopCollectionViewCell.h; sourceTree = "<group>"; };
+		B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopCollectionViewCell.m; sourceTree = "<group>"; };
+		C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopPushAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07705D96F85116EF0DF310C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A09F1D20944D2C4AC750A3A9 /* Pods-PopPushAnimation.debug.xcconfig */,
+				A3C57C733670FD161C878FFF /* Pods-PopPushAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6958D6FC6793CF8D8575D823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B437C16C1DFA523400F222B4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				B437C1911DFA523500F222B4 /* PopPushAnimationTests */,
 				B437C19C1DFA523500F222B4 /* PopPushAnimationUITests */,
 				B437C1761DFA523400F222B4 /* Products */,
+				07705D96F85116EF0DF310C2 /* Pods */,
+				6958D6FC6793CF8D8575D823 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +128,11 @@
 		B437C1771DFA523400F222B4 /* PopPushAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B437C1AD1DFA841900F222B4 /* PopAlertView */,
+				B437C1AC1DFA83A600F222B4 /* PullDownBackAnimation */,
+				B437C1AB1DFA834700F222B4 /* ReversalAnimation */,
 				B437C17B1DFA523400F222B4 /* AppDelegate.h */,
 				B437C17C1DFA523400F222B4 /* AppDelegate.m */,
-				B437C17E1DFA523400F222B4 /* ViewController.h */,
-				B437C17F1DFA523400F222B4 /* ViewController.m */,
 				B437C1811DFA523400F222B4 /* Main.storyboard */,
 				B437C1841DFA523400F222B4 /* Assets.xcassets */,
 				B437C1861DFA523400F222B4 /* LaunchScreen.storyboard */,
@@ -140,6 +168,32 @@
 			path = PopPushAnimationUITests;
 			sourceTree = "<group>";
 		};
+		B437C1AB1DFA834700F222B4 /* ReversalAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B437C17E1DFA523400F222B4 /* ViewController.h */,
+				B437C17F1DFA523400F222B4 /* ViewController.m */,
+				B437C1AE1DFA8A6E00F222B4 /* PopCollectionViewCell.h */,
+				B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */,
+			);
+			name = ReversalAnimation;
+			path = PushViewController;
+			sourceTree = "<group>";
+		};
+		B437C1AC1DFA83A600F222B4 /* PullDownBackAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PullDownBackAnimation;
+			sourceTree = "<group>";
+		};
+		B437C1AD1DFA841900F222B4 /* PopAlertView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PopAlertView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B437C1A21DFA523500F222B4 /* Build configuration list for PBXNativeTarget "PopPushAnimation" */;
 			buildPhases = (
+				45863C7E51412EB2D299E2A2 /* [CP] Check Pods Manifest.lock */,
 				B437C1711DFA523400F222B4 /* Sources */,
 				B437C1721DFA523400F222B4 /* Frameworks */,
 				B437C1731DFA523400F222B4 /* Resources */,
+				1549F3073E82B46E620F1874 /* [CP] Embed Pods Frameworks */,
+				9C02EB1BE25F416C6DF1BBC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,11 +325,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1549F3073E82B46E620F1874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopPushAnimation/Pods-PopPushAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45863C7E51412EB2D299E2A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C02EB1BE25F416C6DF1BBC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopPushAnimation/Pods-PopPushAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B437C1711DFA523400F222B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */,
 				B437C1801DFA523400F222B4 /* ViewController.m in Sources */,
 				B437C17D1DFA523400F222B4 /* AppDelegate.m in Sources */,
 				B437C17A1DFA523400F222B4 /* main.m in Sources */,
@@ -420,6 +526,7 @@
 		};
 		B437C1A31DFA523500F222B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09F1D20944D2C4AC750A3A9 /* Pods-PopPushAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopPushAnimation/Info.plist;
@@ -431,6 +538,7 @@
 		};
 		B437C1A41DFA523500F222B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C57C733670FD161C878FFF /* Pods-PopPushAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopPushAnimation/Info.plist;
@@ -505,6 +613,7 @@
 				B437C1A41DFA523500F222B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B437C1A51DFA523500F222B4 /* Build configuration list for PBXNativeTarget "PopPushAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +622,7 @@
 				B437C1A71DFA523500F222B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B437C1A81DFA523500F222B4 /* Build configuration list for PBXNativeTarget "PopPushAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +631,7 @@
 				B437C1AA1DFA523500F222B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

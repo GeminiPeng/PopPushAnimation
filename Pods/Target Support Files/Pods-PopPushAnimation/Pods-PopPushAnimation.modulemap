@@ -1,0 +1,6 @@
+framework module Pods_PopPushAnimation {
+  umbrella header "Pods-PopPushAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}
