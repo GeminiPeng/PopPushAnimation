@@ -24,6 +24,8 @@
 
 @property (nonatomic,strong)UICollectionView * collectionView;
 
+@property (nonatomic)BOOL isOne;
+
 @end
 
 @implementation ViewController
@@ -54,6 +56,64 @@
         [_collectionView registerClass:[PopCollectionViewCell class] forCellWithReuseIdentifier:@"popCell"];
     }
     return _collectionView;
+}
+
+
+
+#pragma mark - collectionViewDelegate & dataSource
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return 10;
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    PopCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"popCell" forIndexPath:indexPath];
+    
+    return  cell;
+    
+    
+}
+
+
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (_isOne) {
+        
+        if (indexPath.row < 3) {
+            
+            cell.transform = CGAffineTransformTranslate(cell.transform, 0, TRANS_H(472));
+            
+            [UIView animateWithDuration:0.7 delay:0.12 * indexPath.row usingSpringWithDamping:0.8 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveLinear animations:^{
+                
+                cell.transform = CGAffineTransformIdentity;
+                
+                
+            } completion:^(BOOL finished) {
+                
+                
+            }];
+        }
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    _isOne = NO;
+    
 }
 
 
