@@ -19,10 +19,14 @@
 
 #import "ViewController.h"
 #import "PopCollectionViewCell.h"
+#import "PBViewController.h"
+#import "PopRecersalAnimation.h"
 
-@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIViewControllerTransitioningDelegate>
 
 @property (nonatomic,strong)UICollectionView * collectionView;
+
+@property (nonatomic,strong)PopRecersalAnimation * animation;
 
 @property (nonatomic)BOOL isOne;
 
@@ -33,7 +37,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _isOne = YES;
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.collectionView];
+    
+    _animation = [PopRecersalAnimation new];
 }
+
 
 - (UICollectionView *)collectionView {
     
@@ -81,9 +92,20 @@
     
 }
 
-
-
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    _animation.modalA = true;
+    
+    PopCollectionViewCell * view = (PopCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    _animation.frontView = view;
+    
+    CGRect frame = [view convertRect:view.frame toView:self.view];
+    
+    _animation.frontFrame = frame;
+    
+    PBViewController * pbVC = [PBViewController new];
+    pbVC.transitioningDelegate = self;
+    [self presentViewController:pbVC animated:YES completion:nil];
     
 }
 
@@ -115,6 +137,28 @@
     _isOne = NO;
     
 }
+
+
+#pragma mark- 
+
+-(id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    
+    self.animation.show = true;
+    return self.animation;
+}
+
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    
+    self.animation.show = false;
+    return self.animation;
+}
+
+-(id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+    return nil;
+}
+
 
 
 @end

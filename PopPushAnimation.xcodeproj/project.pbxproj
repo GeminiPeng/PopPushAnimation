@@ -16,6 +16,8 @@
 		B437C1931DFA523500F222B4 /* PopPushAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1921DFA523500F222B4 /* PopPushAnimationTests.m */; };
 		B437C19E1DFA523500F222B4 /* PopPushAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C19D1DFA523500F222B4 /* PopPushAnimationUITests.m */; };
 		B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */; };
+		B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */; };
+		B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F011E011AC6007CDA1C /* PBViewController.m */; };
 		F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,10 @@
 		B437C19F1DFA523500F222B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B437C1AE1DFA8A6E00F222B4 /* PopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopCollectionViewCell.h; sourceTree = "<group>"; };
 		B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopCollectionViewCell.m; sourceTree = "<group>"; };
+		B4A53EFD1E01174B007CDA1C /* PopRecersalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopRecersalAnimation.h; sourceTree = "<group>"; };
+		B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopRecersalAnimation.m; sourceTree = "<group>"; };
+		B4A53F001E011AC6007CDA1C /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
+		B4A53F011E011AC6007CDA1C /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
 		C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopPushAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +181,10 @@
 				B437C17F1DFA523400F222B4 /* ViewController.m */,
 				B437C1AE1DFA8A6E00F222B4 /* PopCollectionViewCell.h */,
 				B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */,
+				B4A53EFD1E01174B007CDA1C /* PopRecersalAnimation.h */,
+				B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */,
+				B4A53F001E011AC6007CDA1C /* PBViewController.h */,
+				B4A53F011E011AC6007CDA1C /* PBViewController.m */,
 			);
 			name = ReversalAnimation;
 			path = PushViewController;
@@ -381,6 +391,8 @@
 				B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */,
 				B437C1801DFA523400F222B4 /* ViewController.m in Sources */,
 				B437C17D1DFA523400F222B4 /* AppDelegate.m in Sources */,
+				B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */,
+				B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */,
 				B437C17A1DFA523400F222B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
