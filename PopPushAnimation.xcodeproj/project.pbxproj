@@ -18,6 +18,8 @@
 		B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */; };
 		B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */; };
 		B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F011E011AC6007CDA1C /* PBViewController.m */; };
+		B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F071E013AA0007CDA1C /* ShowAnimation.m */; };
+		B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */; };
 		F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopRecersalAnimation.m; sourceTree = "<group>"; };
 		B4A53F001E011AC6007CDA1C /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
 		B4A53F011E011AC6007CDA1C /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
+		B4A53F061E013AA0007CDA1C /* ShowAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAnimation.h; sourceTree = "<group>"; };
+		B4A53F071E013AA0007CDA1C /* ShowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAnimation.m; sourceTree = "<group>"; };
+		B4A53F091E013AC7007CDA1C /* DownBackAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownBackAnimation.h; sourceTree = "<group>"; };
+		B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownBackAnimation.m; sourceTree = "<group>"; };
 		C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopPushAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +199,10 @@
 		B437C1AC1DFA83A600F222B4 /* PullDownBackAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B4A53F061E013AA0007CDA1C /* ShowAnimation.h */,
+				B4A53F071E013AA0007CDA1C /* ShowAnimation.m */,
+				B4A53F091E013AC7007CDA1C /* DownBackAnimation.h */,
+				B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */,
 			);
 			path = PullDownBackAnimation;
 			sourceTree = "<group>";
@@ -391,9 +401,11 @@
 				B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */,
 				B437C1801DFA523400F222B4 /* ViewController.m in Sources */,
 				B437C17D1DFA523400F222B4 /* AppDelegate.m in Sources */,
+				B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */,
 				B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */,
 				B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */,
 				B437C17A1DFA523400F222B4 /* main.m in Sources */,
+				B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
