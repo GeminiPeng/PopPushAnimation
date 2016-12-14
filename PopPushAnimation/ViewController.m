@@ -39,7 +39,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     _isOne = YES;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.collectionView];
     
     _animation = [PopRecersalAnimation new];
@@ -58,7 +58,7 @@
         // 设置最小列间距，也就是左行与右一行的中间最小间隔
         flowLayout.minimumInteritemSpacing = 0;
         // 内边距
-        flowLayout.sectionInset = UIEdgeInsetsMake(0, TRANS_W(8), 0, TRANS_W(8));
+        flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, TRANS_H(230), SCREEN_WIDTH, TRANS_H(280)) collectionViewLayout:flowLayout];
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.backgroundColor = [UIColor whiteColor];
@@ -99,7 +99,9 @@
     PopCollectionViewCell * view = (PopCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     _animation.frontView = view;
     
-    CGRect frame = [view convertRect:view.frame toView:self.view];
+//    CGPoint point = [view convertPoint:view.frame.origin fromView:self.view];
+    
+    CGRect frame = [view convertRect:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height) toView:self.view];
     
     _animation.frontFrame = frame;
     
