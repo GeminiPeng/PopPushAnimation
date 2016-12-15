@@ -20,6 +20,7 @@
 		B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F011E011AC6007CDA1C /* PBViewController.m */; };
 		B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F071E013AA0007CDA1C /* ShowAnimation.m */; };
 		B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */; };
+		B4A53F0E1E023674007CDA1C /* DownBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F0D1E023674007CDA1C /* DownBackVC.m */; };
 		F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		B4A53F071E013AA0007CDA1C /* ShowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAnimation.m; sourceTree = "<group>"; };
 		B4A53F091E013AC7007CDA1C /* DownBackAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownBackAnimation.h; sourceTree = "<group>"; };
 		B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownBackAnimation.m; sourceTree = "<group>"; };
+		B4A53F0C1E023674007CDA1C /* DownBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownBackVC.h; sourceTree = "<group>"; };
+		B4A53F0D1E023674007CDA1C /* DownBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownBackVC.m; sourceTree = "<group>"; };
 		C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopPushAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,6 +206,8 @@
 				B4A53F071E013AA0007CDA1C /* ShowAnimation.m */,
 				B4A53F091E013AC7007CDA1C /* DownBackAnimation.h */,
 				B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */,
+				B4A53F0C1E023674007CDA1C /* DownBackVC.h */,
+				B4A53F0D1E023674007CDA1C /* DownBackVC.m */,
 			);
 			path = PullDownBackAnimation;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 			files = (
 				B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */,
 				B437C1801DFA523400F222B4 /* ViewController.m in Sources */,
+				B4A53F0E1E023674007CDA1C /* DownBackVC.m in Sources */,
 				B437C17D1DFA523400F222B4 /* AppDelegate.m in Sources */,
 				B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */,
 				B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */,

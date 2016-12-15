@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DownBackAnimation.h"
 
 @interface ShowAnimation : NSObject <UIViewControllerAnimatedTransitioning>
 
-
+@property (nonatomic)DownBackAnimation * downBack;
+@property (nonatomic)BOOL show;
 
 @end
