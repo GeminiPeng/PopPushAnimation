@@ -71,7 +71,7 @@
 }
 
 -(id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
-    return nil;
+    return (self.animation.downBack.interactive)? self.animation.downBack : nil;
 }
 
 @end

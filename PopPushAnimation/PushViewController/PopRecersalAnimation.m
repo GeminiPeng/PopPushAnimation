@@ -55,6 +55,8 @@
         POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
         animation.springBounciness = 5;
         animation.springSpeed = 10;
+        animation.dynamicsTension = 299.5;
+        animation.dynamicsFriction = 27.05;
         animation.toValue = [NSValue valueWithCGSize:CGSizeMake(0.9f, 0.9f)];
         [_fromView.layer pop_addAnimation:animation forKey:@"scaleAnim"];
         
@@ -87,6 +89,8 @@
         POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
         animation.springBounciness = 5;
         animation.springSpeed = 10;
+        animation.dynamicsTension = 299.5;
+        animation.dynamicsFriction = 27.05;
         animation.toValue = [NSValue valueWithCGSize:CGSizeMake(1, 1)];
         [_toView.layer pop_addAnimation:animation forKey:@"scaleAnim"];
         

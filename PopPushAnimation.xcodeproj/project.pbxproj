@@ -21,6 +21,8 @@
 		B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F071E013AA0007CDA1C /* ShowAnimation.m */; };
 		B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */; };
 		B4A53F0E1E023674007CDA1C /* DownBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F0D1E023674007CDA1C /* DownBackVC.m */; };
+		B4A53F141E02873A007CDA1C /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F131E02873A007CDA1C /* ThreeViewController.m */; };
+		B4A53F171E02875A007CDA1C /* HorizontalSlideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F161E02875A007CDA1C /* HorizontalSlideAnimation.m */; };
 		F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,10 @@
 		B4A53F0A1E013AC7007CDA1C /* DownBackAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownBackAnimation.m; sourceTree = "<group>"; };
 		B4A53F0C1E023674007CDA1C /* DownBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownBackVC.h; sourceTree = "<group>"; };
 		B4A53F0D1E023674007CDA1C /* DownBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownBackVC.m; sourceTree = "<group>"; };
+		B4A53F121E02873A007CDA1C /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		B4A53F131E02873A007CDA1C /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		B4A53F151E02875A007CDA1C /* HorizontalSlideAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalSlideAnimation.h; sourceTree = "<group>"; };
+		B4A53F161E02875A007CDA1C /* HorizontalSlideAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalSlideAnimation.m; sourceTree = "<group>"; };
 		C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopPushAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,7 @@
 		B437C1771DFA523400F222B4 /* PopPushAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B4A53F111E02868C007CDA1C /* HorizontalSlideAnimation */,
 				B437C1AD1DFA841900F222B4 /* PopAlertView */,
 				B437C1AC1DFA83A600F222B4 /* PullDownBackAnimation */,
 				B437C1AB1DFA834700F222B4 /* ReversalAnimation */,
@@ -217,6 +224,17 @@
 			children = (
 			);
 			path = PopAlertView;
+			sourceTree = "<group>";
+		};
+		B4A53F111E02868C007CDA1C /* HorizontalSlideAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B4A53F121E02873A007CDA1C /* ThreeViewController.h */,
+				B4A53F131E02873A007CDA1C /* ThreeViewController.m */,
+				B4A53F151E02875A007CDA1C /* HorizontalSlideAnimation.h */,
+				B4A53F161E02875A007CDA1C /* HorizontalSlideAnimation.m */,
+			);
+			path = HorizontalSlideAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +429,9 @@
 				B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */,
 				B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */,
 				B437C17A1DFA523400F222B4 /* main.m in Sources */,
+				B4A53F171E02875A007CDA1C /* HorizontalSlideAnimation.m in Sources */,
 				B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */,
+				B4A53F141E02873A007CDA1C /* ThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
