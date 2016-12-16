@@ -9,10 +9,15 @@
 #import "DownBackVC.h"
 #import "ThreeViewController.h"
 #import "HorizontalSlideAnimation.h"
+#import "PopAlertView.h"
+#import "SlideIntoAnimation.h"
 
-@interface DownBackVC ()<UIViewControllerTransitioningDelegate>
+
+@interface DownBackVC ()<UIViewControllerTransitioningDelegate,PopAlertViewDelegate>
 
 @property (nonatomic,strong)HorizontalSlideAnimation * animation;
+
+@property (nonatomic,strong)PopAlertView * alertView;
 @end
 
 @implementation DownBackVC
@@ -38,7 +43,7 @@
     [alert setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     alert.frame = CGRectMake(220, 50, 100, 50);
     alert.backgroundColor = [UIColor redColor];
-    [alert addTarget:self action:@selector(alertView) forControlEvents:UIControlEventTouchUpInside];
+    [alert addTarget:self action:@selector(alertViewClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:alert];
     
     
@@ -52,14 +57,43 @@
 
 }
 
+- (PopAlertView *)alertView {
+    
+    if (_alertView == nil) {
+        
+        _alertView = [[PopAlertView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        _alertView.cancelDelegate = self;
+    }
+    return _alertView;
+}
+
 - (void)next {
     ThreeViewController * threeVC = [ThreeViewController new];
     threeVC.transitioningDelegate = self;
     [self presentViewController:threeVC animated:YES completion:nil];
 }
 
-- (void)alertView {
+- (void)alertViewClick {
     
+    SlideIntoAnimation * animation = [[SlideIntoAnimation alloc]init];
+    [animation inToAnimation:self.alertView.operateView];
+    
+    [[UIApplication sharedApplication].keyWindow addSubview:self.alertView];
+}
+
+- (void)cancelPopAlertView {
+    
+    SlideIntoAnimation * animation = [[SlideIntoAnimation alloc]init];
+    [animation outAnimation:self.alertView.operateView];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.alertView.alpha = 0.0;
+    }completion:^(BOOL finished) {
+        [self.alertView removeFromSuperview];
+        self.alertView = nil;
+    }];
+    
+
 }
 
 - (void)back {

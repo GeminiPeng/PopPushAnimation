@@ -8,4 +8,4 @@ Demo包含3个转场动画,几个小动画,详细看demo
 
 而且还主要用到了Facebook 出的POP动画
 
-
+动画原型制作采用的Origami Studio
