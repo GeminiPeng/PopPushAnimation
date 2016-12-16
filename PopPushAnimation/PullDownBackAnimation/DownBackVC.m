@@ -39,7 +39,7 @@
     [self.view addSubview:back];
     
     UIButton * alert = [UIButton buttonWithType:UIButtonTypeCustom];
-    [alert setTitle:@"提示框" forState:UIControlStateNormal];
+    [alert setTitle:@"提示框1" forState:UIControlStateNormal];
     [alert setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     alert.frame = CGRectMake(220, 50, 100, 50);
     alert.backgroundColor = [UIColor redColor];
@@ -54,6 +54,14 @@
     next.backgroundColor = [UIColor greenColor];
     [next addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:next];
+    
+    UIButton * alert2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [alert2 setTitle:@"提示框2" forState:UIControlStateNormal];
+    [alert2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    alert2.frame = CGRectMake(20, 150, 100, 50);
+    alert2.backgroundColor = [UIColor redColor];
+    [alert2 addTarget:self action:@selector(alertView2Click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:alert2];
 
 }
 
@@ -79,6 +87,20 @@
     [animation inToAnimation:self.alertView.operateView];
     
     [[UIApplication sharedApplication].keyWindow addSubview:self.alertView];
+}
+
+- (void)alertView2Click {
+    
+    SlideIntoAnimation * animation = [[SlideIntoAnimation alloc]init];
+    [[UIApplication sharedApplication].keyWindow addSubview:self.alertView];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+    } completion:^(BOOL finished) {
+       [animation shakeToShow:self.alertView.operateView];
+    }];
+    
+    
 }
 
 - (void)cancelPopAlertView {
