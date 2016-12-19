@@ -25,6 +25,9 @@
 		B4A53F171E02875A007CDA1C /* HorizontalSlideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F161E02875A007CDA1C /* HorizontalSlideAnimation.m */; };
 		B4A53F5F1E0382BC007CDA1C /* PopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F5E1E0382BC007CDA1C /* PopAlertView.m */; };
 		B4E078081E03C3EF0048DA22 /* SlideIntoAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E078071E03C3EF0048DA22 /* SlideIntoAnimation.m */; };
+		B4E0780C1E03E6980048DA22 /* WaggleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0780B1E03E6980048DA22 /* WaggleFlowLayout.m */; };
+		B4E0780F1E03E9AC0048DA22 /* WaggleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0780E1E03E9AC0048DA22 /* WaggleViewController.m */; };
+		B4E078121E03E9E90048DA22 /* WaggleCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E078111E03E9E90048DA22 /* WaggleCollectionCell.m */; };
 		F4C4AE835A7F2E34405D0FB3 /* Pods_PopPushAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,12 @@
 		B4A53F5E1E0382BC007CDA1C /* PopAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAlertView.m; sourceTree = "<group>"; };
 		B4E078061E03C3EF0048DA22 /* SlideIntoAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideIntoAnimation.h; sourceTree = "<group>"; };
 		B4E078071E03C3EF0048DA22 /* SlideIntoAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideIntoAnimation.m; sourceTree = "<group>"; };
+		B4E0780A1E03E6980048DA22 /* WaggleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaggleFlowLayout.h; sourceTree = "<group>"; };
+		B4E0780B1E03E6980048DA22 /* WaggleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaggleFlowLayout.m; sourceTree = "<group>"; };
+		B4E0780D1E03E9AC0048DA22 /* WaggleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaggleViewController.h; sourceTree = "<group>"; };
+		B4E0780E1E03E9AC0048DA22 /* WaggleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaggleViewController.m; sourceTree = "<group>"; };
+		B4E078101E03E9E90048DA22 /* WaggleCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaggleCollectionCell.h; sourceTree = "<group>"; };
+		B4E078111E03E9E90048DA22 /* WaggleCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaggleCollectionCell.m; sourceTree = "<group>"; };
 		C5261CDAC92628CED75F50F1 /* Pods_PopPushAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopPushAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +164,7 @@
 		B437C1771DFA523400F222B4 /* PopPushAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B4E078091E03E66B0048DA22 /* WaggleAnimation */,
 				B4A53F111E02868C007CDA1C /* HorizontalSlideAnimation */,
 				B437C1AD1DFA841900F222B4 /* PopAlertView */,
 				B437C1AC1DFA83A600F222B4 /* PullDownBackAnimation */,
@@ -247,6 +257,19 @@
 			path = HorizontalSlideAnimation;
 			sourceTree = "<group>";
 		};
+		B4E078091E03E66B0048DA22 /* WaggleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B4E0780A1E03E6980048DA22 /* WaggleFlowLayout.h */,
+				B4E0780B1E03E6980048DA22 /* WaggleFlowLayout.m */,
+				B4E0780D1E03E9AC0048DA22 /* WaggleViewController.h */,
+				B4E0780E1E03E9AC0048DA22 /* WaggleViewController.m */,
+				B4E078101E03E9E90048DA22 /* WaggleCollectionCell.h */,
+				B4E078111E03E9E90048DA22 /* WaggleCollectionCell.m */,
+			);
+			path = WaggleAnimation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +340,7 @@
 				TargetAttributes = {
 					B437C1741DFA523400F222B4 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RF5FKDJ4K4;
 						ProvisioningStyle = Automatic;
 					};
 					B437C18D1DFA523500F222B4 = {
@@ -435,12 +459,15 @@
 				B437C1801DFA523400F222B4 /* ViewController.m in Sources */,
 				B4A53F0E1E023674007CDA1C /* DownBackVC.m in Sources */,
 				B437C17D1DFA523400F222B4 /* AppDelegate.m in Sources */,
+				B4E078121E03E9E90048DA22 /* WaggleCollectionCell.m in Sources */,
 				B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */,
 				B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */,
+				B4E0780F1E03E9AC0048DA22 /* WaggleViewController.m in Sources */,
 				B4E078081E03C3EF0048DA22 /* SlideIntoAnimation.m in Sources */,
 				B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */,
 				B437C17A1DFA523400F222B4 /* main.m in Sources */,
 				B4A53F171E02875A007CDA1C /* HorizontalSlideAnimation.m in Sources */,
+				B4E0780C1E03E6980048DA22 /* WaggleFlowLayout.m in Sources */,
 				B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */,
 				B4A53F141E02873A007CDA1C /* ThreeViewController.m in Sources */,
 				B4A53F5F1E0382BC007CDA1C /* PopAlertView.m in Sources */,
@@ -591,7 +618,9 @@
 			baseConfigurationReference = A09F1D20944D2C4AC750A3A9 /* Pods-PopPushAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RF5FKDJ4K4;
 				INFOPLIST_FILE = PopPushAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Project-Eagle.PopPushAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,7 +632,9 @@
 			baseConfigurationReference = A3C57C733670FD161C878FFF /* Pods-PopPushAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RF5FKDJ4K4;
 				INFOPLIST_FILE = PopPushAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Project-Eagle.PopPushAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,7 +7,7 @@
 //
 
 #import "ThreeViewController.h"
-
+#import "WaggleViewController.h"
 @interface ThreeViewController ()
 
 @end
@@ -27,6 +27,14 @@
     [back setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:back];
+    
+    UIButton * next = [UIButton buttonWithType:UIButtonTypeCustom];
+    [next setTitle:@"下一页" forState:UIControlStateNormal];
+    [next setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    next.frame = CGRectMake(220, 150, 100, 50);
+    next.backgroundColor = [UIColor greenColor];
+    [next addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:next];
 }
 
 - (void)back {
@@ -34,5 +42,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
+- (void)next {
+    WaggleViewController * waggleVC = [WaggleViewController new];
+    
+    [self presentViewController:waggleVC animated:YES completion:nil];
+}
 @end
