@@ -26,7 +26,7 @@
     // Do any additional setup after loading the view.
     
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor redColor];
 
     UIButton * back = [UIButton buttonWithType:UIButtonTypeCustom];
     back.frame = CGRectMake(20, 30, 100, 50);
@@ -61,7 +61,7 @@
         flowLayout.footerReferenceSize=CGSizeMake(10, 20);
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, TRANS_H(100), SCREEN_WIDTH, SCREEN_HEIGHT-TRANS_H(100)) collectionViewLayout:flowLayout];
         _collectionView.showsHorizontalScrollIndicator = NO;
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor blueColor];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerClass:[WaggleCollectionCell class] forCellWithReuseIdentifier:@"testCell"];
@@ -77,7 +77,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 10;
+    return 100;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 

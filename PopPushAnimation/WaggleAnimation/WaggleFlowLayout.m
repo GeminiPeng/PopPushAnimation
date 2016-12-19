@@ -54,14 +54,14 @@
 }
 
 -(NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSArray * original   = [super layoutAttributesForElementsInRect:rect];
-    NSArray * attributes = [[NSArray alloc] initWithArray:original copyItems:YES];
-    	for (id obj in attributes) {
-//    		NSLog(@"attributes **************** %@",obj);
-    	}
-    	for (id obj in [_animator itemsInRect:rect]) {
-//    		NSLog(@"animator a ---------------- %@",obj);
-    	}
+//    NSArray * original   = [super layoutAttributesForElementsInRect:rect];
+//    NSArray * attributes = [[NSArray alloc] initWithArray:original copyItems:YES];
+//    	for (id obj in attributes) {
+////    		NSLog(@"attributes **************** %@",obj);
+//    	}
+//    	for (id obj in [_animator itemsInRect:rect]) {
+////    		NSLog(@"animator a ---------------- %@",obj);
+//    	}
     return [_animator itemsInRect:rect];
 }
 
@@ -88,7 +88,7 @@
         
         [_animator updateItemUsingCurrentState:item];
     }
-    //return YES;
+//    return YES;
     return NO;
 }
 
@@ -100,43 +100,43 @@
 
 
 
-- (void)resetCellAnimator{
-    CGSize contentSize = [self collectionViewContentSize];
-    NSArray *items = [super layoutAttributesForElementsInRect:CGRectMake(0, 0, contentSize.width, contentSize.height)];
-    
-    self.animator = [[UIDynamicAnimator alloc] initWithCollectionViewLayout:self];
-    
-    for (UICollectionViewLayoutAttributes *item in items) {
-        UIAttachmentBehavior *spring = [[UIAttachmentBehavior alloc] initWithItem:item attachedToAnchor:item.center];
-        
-        spring.length = 0;
-        spring.damping = self.springDamping;
-        spring.frequency = self.springFrequency;
-        
-        [self.animator addBehavior:spring];
-    }
-}
+//- (void)resetCellAnimator{
+//    CGSize contentSize = [self collectionViewContentSize];
+//    NSArray *items = [super layoutAttributesForElementsInRect:CGRectMake(0, 0, contentSize.width, contentSize.height)];
+//    
+//    self.animator = [[UIDynamicAnimator alloc] initWithCollectionViewLayout:self];
+//    
+//    for (UICollectionViewLayoutAttributes *item in items) {
+//        UIAttachmentBehavior *spring = [[UIAttachmentBehavior alloc] initWithItem:item attachedToAnchor:item.center];
+//        
+//        spring.length = 0;
+//        spring.damping = self.springDamping;
+//        spring.frequency = self.springFrequency;
+//        
+//        [self.animator addBehavior:spring];
+//    }
+//}
 
 
-- (void)setSpringDamping:(CGFloat)springDamping
-{
-	if (springDamping >= 0 && _springDamping != springDamping) {
-		_springDamping = springDamping;
-		for (UIAttachmentBehavior *spring in self.animator.behaviors) {
-			spring.damping = _springDamping;
-		}
-	}
-}
-
-- (void)setSpringFrequency:(CGFloat)springFrequency
-{
-	if (springFrequency >= 0 && _springFrequency != springFrequency) {
-		_springFrequency = springFrequency;
-		for (UIAttachmentBehavior *spring in self.animator.behaviors) {
-			spring.frequency = _springFrequency;
-		}
-	}
-}
+//- (void)setSpringDamping:(CGFloat)springDamping
+//{
+//	if (springDamping >= 0 && _springDamping != springDamping) {
+//		_springDamping = springDamping;
+//		for (UIAttachmentBehavior *spring in self.animator.behaviors) {
+//			spring.damping = _springDamping;
+//		}
+//	}
+//}
+//
+//- (void)setSpringFrequency:(CGFloat)springFrequency
+//{
+//	if (springFrequency >= 0 && _springFrequency != springFrequency) {
+//		_springFrequency = springFrequency;
+//		for (UIAttachmentBehavior *spring in self.animator.behaviors) {
+//			spring.frequency = _springFrequency;
+//		}
+//	}
+//}
 
 
 @end

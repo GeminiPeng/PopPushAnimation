@@ -10,6 +10,6 @@
 
 @interface WaggleFlowLayout : UICollectionViewFlowLayout
 
-- (void)resetCellAnimator;
+//- (void)resetCellAnimator;
 
 @end
