@@ -9,7 +9,7 @@
 #import "PBViewController.h"
 #import "DownBackVC.h"
 #import "ShowAnimation.h"
-
+#import "TableViewAnimationVC.h"
 
 @interface PBViewController ()<UIViewControllerTransitioningDelegate>
 
@@ -43,6 +43,19 @@
     [todown addTarget:self action:@selector(todown) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:todown];
     
+    UIButton * other = [UIButton buttonWithType:UIButtonTypeCustom];
+    [other setTitle:@"另一页" forState:UIControlStateNormal];
+    [other setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    other.frame = CGRectMake(20, 150, 100, 50);
+    other.backgroundColor = [UIColor purpleColor];
+    [other addTarget:self action:@selector(other) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:other];
+    
+}
+
+- (void)other {
+    TableViewAnimationVC * tableVC = [TableViewAnimationVC new];
+    [self presentViewController:tableVC animated:YES completion:nil];
 }
 
 - (void)todown {
