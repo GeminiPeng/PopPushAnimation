@@ -16,6 +16,9 @@
 		B437C1931DFA523500F222B4 /* PopPushAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1921DFA523500F222B4 /* PopPushAnimationTests.m */; };
 		B437C19E1DFA523500F222B4 /* PopPushAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C19D1DFA523500F222B4 /* PopPushAnimationUITests.m */; };
 		B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */; };
+		B45C151E1E0A1F1B0020C73C /* TableViewAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C151D1E0A1F1B0020C73C /* TableViewAnimationVC.m */; };
+		B45C15211E0A1F540020C73C /* DidSelectAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C15201E0A1F540020C73C /* DidSelectAnimationCell.m */; };
+		B45C15231E0A26BC0020C73C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B45C15221E0A26BC0020C73C /* icon.png */; };
 		B4A53EFF1E01174B007CDA1C /* PopRecersalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */; };
 		B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F011E011AC6007CDA1C /* PBViewController.m */; };
 		B4A53F081E013AA0007CDA1C /* ShowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A53F071E013AA0007CDA1C /* ShowAnimation.m */; };
@@ -69,6 +72,12 @@
 		B437C19F1DFA523500F222B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B437C1AE1DFA8A6E00F222B4 /* PopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopCollectionViewCell.h; sourceTree = "<group>"; };
 		B437C1AF1DFA8A6E00F222B4 /* PopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopCollectionViewCell.m; sourceTree = "<group>"; };
+		B45C151C1E0A1F1B0020C73C /* TableViewAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationVC.h; sourceTree = "<group>"; };
+		B45C151D1E0A1F1B0020C73C /* TableViewAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationVC.m; sourceTree = "<group>"; };
+		B45C151F1E0A1F540020C73C /* DidSelectAnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DidSelectAnimationCell.h; sourceTree = "<group>"; };
+		B45C15201E0A1F540020C73C /* DidSelectAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DidSelectAnimationCell.m; sourceTree = "<group>"; };
+		B45C15221E0A26BC0020C73C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B45C15251E0A2DDF0020C73C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B4A53EFD1E01174B007CDA1C /* PopRecersalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopRecersalAnimation.h; sourceTree = "<group>"; };
 		B4A53EFE1E01174B007CDA1C /* PopRecersalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopRecersalAnimation.m; sourceTree = "<group>"; };
 		B4A53F001E011AC6007CDA1C /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
@@ -164,6 +173,7 @@
 		B437C1771DFA523400F222B4 /* PopPushAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B45C151B1E0A1E8A0020C73C /* TableViewCellAnimation */,
 				B4E078091E03E66B0048DA22 /* WaggleAnimation */,
 				B4A53F111E02868C007CDA1C /* HorizontalSlideAnimation */,
 				B437C1AD1DFA841900F222B4 /* PopAlertView */,
@@ -183,7 +193,9 @@
 		B437C1781DFA523400F222B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B45C15221E0A26BC0020C73C /* icon.png */,
 				B437C1791DFA523400F222B4 /* main.m */,
+				B45C15251E0A2DDF0020C73C /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,6 +256,17 @@
 				B4E078071E03C3EF0048DA22 /* SlideIntoAnimation.m */,
 			);
 			path = PopAlertView;
+			sourceTree = "<group>";
+		};
+		B45C151B1E0A1E8A0020C73C /* TableViewCellAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B45C151C1E0A1F1B0020C73C /* TableViewAnimationVC.h */,
+				B45C151D1E0A1F1B0020C73C /* TableViewAnimationVC.m */,
+				B45C151F1E0A1F540020C73C /* DidSelectAnimationCell.h */,
+				B45C15201E0A1F540020C73C /* DidSelectAnimationCell.m */,
+			);
+			path = TableViewCellAnimation;
 			sourceTree = "<group>";
 		};
 		B4A53F111E02868C007CDA1C /* HorizontalSlideAnimation */ = {
@@ -380,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45C15231E0A26BC0020C73C /* icon.png in Resources */,
 				B437C1881DFA523400F222B4 /* LaunchScreen.storyboard in Resources */,
 				B437C1851DFA523400F222B4 /* Assets.xcassets in Resources */,
 				B437C1831DFA523400F222B4 /* Main.storyboard in Resources */,
@@ -457,6 +481,7 @@
 			files = (
 				B437C1B01DFA8A6E00F222B4 /* PopCollectionViewCell.m in Sources */,
 				B437C1801DFA523400F222B4 /* ViewController.m in Sources */,
+				B45C15211E0A1F540020C73C /* DidSelectAnimationCell.m in Sources */,
 				B4A53F0E1E023674007CDA1C /* DownBackVC.m in Sources */,
 				B437C17D1DFA523400F222B4 /* AppDelegate.m in Sources */,
 				B4E078121E03E9E90048DA22 /* WaggleCollectionCell.m in Sources */,
@@ -466,6 +491,7 @@
 				B4E078081E03C3EF0048DA22 /* SlideIntoAnimation.m in Sources */,
 				B4A53F021E011AC6007CDA1C /* PBViewController.m in Sources */,
 				B437C17A1DFA523400F222B4 /* main.m in Sources */,
+				B45C151E1E0A1F1B0020C73C /* TableViewAnimationVC.m in Sources */,
 				B4A53F171E02875A007CDA1C /* HorizontalSlideAnimation.m in Sources */,
 				B4E0780C1E03E6980048DA22 /* WaggleFlowLayout.m in Sources */,
 				B4A53F0B1E013AC7007CDA1C /* DownBackAnimation.m in Sources */,
@@ -619,6 +645,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF5FKDJ4K4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/macbook01/Desktop/PopPushAnimation/PopPushAnimation/PrefixHeader.pch;
 				INFOPLIST_FILE = PopPushAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -633,6 +661,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF5FKDJ4K4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/macbook01/Desktop/PopPushAnimation/PopPushAnimation/PrefixHeader.pch;
 				INFOPLIST_FILE = PopPushAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -6,11 +6,10 @@
 //  Copyright © 2016年 Pengbo. All rights reserved.
 //
 
-#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
 
 #import "PopRecersalAnimation.h"
-#import "POP.h"
+
 
 @interface PopRecersalAnimation ()
 @property (nonatomic)UIView * fromView, *toView;

@@ -5,10 +5,7 @@
 //  Created by Pengbo on 2016/12/16.
 //  Copyright © 2016年 Pengbo. All rights reserved.
 //
-#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-#define TRANS_W(w) (w/375.0)*SCREEN_WIDTH
-#define TRANS_H(h) (h/667.0)*SCREEN_HEIGHT
+
 #import "WaggleViewController.h"
 #import "WaggleFlowLayout.h"
 #import "WaggleCollectionCell.h"

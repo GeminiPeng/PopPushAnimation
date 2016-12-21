@@ -5,17 +5,6 @@
 //  Created by Pengbo on 2016/12/9.
 //  Copyright © 2016年 Pengbo. All rights reserved.
 //
-/**宽度比例缩放*/
-#define TRANS_W(w) (w/375.0)*SCREEN_WIDTH
-
-/**高度比例缩放*/
-#define TRANS_H(h) (h/667.0)*SCREEN_HEIGHT
-
-/**屏幕宽度*/
-#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-
-/**屏幕高度*/
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #import "ViewController.h"
 #import "PopCollectionViewCell.h"

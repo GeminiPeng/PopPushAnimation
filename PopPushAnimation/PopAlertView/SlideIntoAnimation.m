@@ -6,13 +6,10 @@
 //  Copyright © 2016年 Pengbo. All rights reserved.
 //
 
-/**屏幕高度*/
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-/**高度比例缩放*/
-#define TRANS_H(h) (h/667.0)*SCREEN_HEIGHT
+
 #import <UIKit/UIKit.h>
 #import "SlideIntoAnimation.h"
-#import "POP.h"
+
 
 @implementation SlideIntoAnimation
 
